@@ -1,10 +1,23 @@
 .main {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
+  align-items: center; 
+  padding: 6rem;*/
   min-height: 100vh;
+  background-color: #C4D6FB;
+  color: #2E323A;
+}
+
+/* this must not be the correct way to alter css in bootstrap */
+.pCard{
+  
+  background-color: #C4D6FB ;
+  box-shadow:  4px 4px 6px #888888;
+}
+
+.black{
+  color: #2E323A !important;
 }
 
 .description {
