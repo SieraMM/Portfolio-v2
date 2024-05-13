@@ -1,6 +1,6 @@
 # (i might could delete this line but ill check later )node_modules
 # dependencies
-/node_modules
+node_modules
 /.pnp
 .pnp.js
 .yarn/install-state.gz

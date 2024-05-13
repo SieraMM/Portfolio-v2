@@ -1,3 +1,4 @@
+/* this is for componenet-level styling*/
 .navBar{
   background-color: #C4D6FB;
    box-shadow: 4px 4px 6px #888888;
@@ -9,5 +10,8 @@
   box-shadow:  4px 4px 6px #888888;
 }
 
-
+.cButton {
+  color:#E13443;
+ border-color:#E13443;
+}
 

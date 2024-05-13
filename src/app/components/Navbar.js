@@ -13,7 +13,7 @@ export default function NavBar (){
       <a class="nav-link active" aria-current="page" href="#">About</a>
         <a class="nav-link" href="#">Work</a>
         <form class="container-fluid justify-content-start">
-    <button class="btn btn-outline-success me-2" type="button" style ={{color: "#FF807C", borderColor:"#FF807C" }}>Resume</button>
+    <button class={`btn me-2 ${styles.cButton}`} type="button" >Resume</button>
     </form>
         
        

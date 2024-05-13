@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function ProjectCard({image, title, subtitle}){
     return(
-        <div className={`card mb-3 p-3 w-75 ${styles.pCard}`}>
+        <div className={`card mb-3 p-3 w-50 ${styles.pCard}`}>
         <div className="row g-0">
           <div className="col-md-4">
             <img src={image} class="img-fluid rounded-start" alt="..."/>

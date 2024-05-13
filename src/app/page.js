@@ -4,17 +4,18 @@ import Navbar from './components/Navbar';
 import ProjectCard from './components/ProjectCard';
 export default function Home() {
   return (
-    <main >
+    <main>
      < Navbar/>
      {/* "position-absolute top-50 start-50 translate-middle" */}
-<section className="body mx-3 px-5 py-3">
+<section className="body mx-5 px-5 py-3">
 <div className = " py-5 my-5 text-left">
   <div className="row">
     <div className = "col-8 w-50">
-<h4 style={{color: "#FF807C"}}> Hi, my name is</h4>
-<h1> Siera Meaux. <br/> I'm a Full-Stack Developer</h1>
-<p>who doubles as a UX designer. I enjoy in building accessible projects that make life more fun.
-   I am currently  volunteering at Code for Philly, working with the non-profit Vote Wise in updating their site. </p>
+<h5> Hi, my name is</h5>
+<h1> Siera Meaux. </h1>
+<h1> I'm a Full-Stack Developer</h1>
+<p className=" pt-4 fs-4">who doubles as a UX designer. I enjoy building accessible projects that make life simple. My passion for learning and following creative pursuits guides everything I do.
+   I am currently volunteering at Code for Philly, working with the non-profit Vote Wise in updating their site. </p>
 
    </div>
 {/* add a link ot my vote wise github contributions */}
@@ -22,17 +23,19 @@ export default function Home() {
 <div className="col text-center align-content-center"  style={{color: "#FF807C"}}> this is an image placeholder</div>
 </div>
 </div>
-<section className="aboutMe">
-  <h4 style={{color: "#FF807C"}}> About Me</h4>
-  <p>I became interested in software development while taking a certificate for UX/UI design Nov 2022. There I was introduced
+
+
+<section className="aboutMe text-center justify-content-center mx-5 px-5">
+  <h5 className="pb-4"> About Me</h5>
+  <p className="fs-5">I became interested in software development while taking a certificate for UX/UI design Nov 2022. There I was introduced
      to CSS, HTML, Bootstrap, and Javascript. After the certificate, I decided to study software development to make websites,
       and use my UX/UI skills to improve my work. Since learning full-stack development, I’ve created two full-stack websites 
-      (including the one you’re on), multiple pull requests for volunteer projects, and many different personal projects.
+      (including the one you’re on), multiple pull requests for volunteer projects, and many different personal projects.</p>
 
-<br/>
-I am familiar with Agile methodologies as well as the following technologies:</p>
+
+<p className="fs-5">I am familiar with Agile methodologies as well as the following technologies:</p>
 {/* this is the ever updating tool matrix */}
-<div class="container text-center w-50 my" style={{fontWeight:"bold"}}>
+<div class="container text-center w-50 my mb-4 pb-4" style={{fontWeight:"bold"}}>
   <div class="row my-3">
     <div class="col">
       Javascript
@@ -81,7 +84,7 @@ I am familiar with Agile methodologies as well as the following technologies:</p
 </section>
  
 
-    <h4 style={{color: "#FF807C"}}> Some Projects I've Worked On Recently</h4>
+    <h5 className="pb-4 text-center"> Some Projects I've Worked On Recently</h5>
     <div className = "parentProject d-flex flex-column justify-content-center align-items-center my-4 ">
       <ProjectCard 
       image = "/next.svg"
