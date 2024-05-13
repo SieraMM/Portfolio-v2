@@ -3,14 +3,14 @@ import Image from 'next/image'
 
 export default function ProjectCard({image, title, subtitle}){
     return(
-        <div className={`card mb-3 p-3 w-50 ${styles.pCard}`}>
+        <div className={`card mb-3 p-3 w-50 rounded-1 ${styles.pCard}`}>
         <div className="row g-0">
           <div className="col-md-4">
-            <img src={image} class="img-fluid rounded-start" alt="..."/>
+            <img src={image} class="img-fluid rounded-start" alt="..." />
           </div>
           <div className="col-md-8 ">
           
-            <div className="card-body text-center">
+            <div className="card-body text-center align-content-center">
               <h5 className="card-title pb-3">{title}</h5>
               <p className="card-text py-2">{subtitle}</p>
               {/* <p> gonna hve to make a small link thing</p> */}

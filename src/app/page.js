@@ -90,19 +90,19 @@ export default function Home() {
     <h5 className="pb-4 text-center"> Some Projects I've Worked On Recently</h5>
     <div className = "parentProject d-flex flex-column justify-content-center align-items-center my-4 ">
       <ProjectCard 
-      image = "/next.svg"
+      image = "/portfolio/originalPortfolioCode.svg"
       title = "Portfolio Website"
       subtitle = "The process of designing and creating this website following the UX Design lifecycle through multiple iterations. This website aims to represent my work as a designer and engineer so far!" 
        />
 
 <ProjectCard 
-      image = "/next.svg"
+      image = "/kindful/iphone1 1.png"
       title = "Kindful"
       subtitle ="Spreading Kindness and Community through mutual and local collaboration (aid-giving).  This is a great example of my UX design process."
        />
 
 <ProjectCard 
-      image = "/next.svg"
+      image = "/njArt/poppyPattern.svg"
       title = "Expensify"
       subtitle = "A friendly customizable expense tracker that uses authentication to customize user experience." 
        />
@@ -110,9 +110,10 @@ export default function Home() {
       <ProjectCard />
     <Callback /> */}
     </div>
+   
+    <div className="footer text-center d-flex flex-column justify-contents-center align-contents-center my-5 pt-5">
     <Footer/>
-    <div className="footer container text-center my-5 pt-5">
-    <p> Designed & Build by Siera Meaux</p>
+    <p> Designed & Built by Siera Meaux</p>
     </div>
     </section>
     </main>
