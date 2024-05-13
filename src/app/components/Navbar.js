@@ -2,7 +2,7 @@ import styles from "../page.module.css";
 
 export default function NavBar (){
     return(
-        <nav className= "navbar sticky-top navbar-expand-lg navbar-light mb-5"   style={{ backgroundColor: "#C4D6FB",  boxShadow: " 4px 4px 6px #888888"}}>
+        <nav className= {` navbar sticky-top navbar-expand-lg navbar-light mb-5 ${styles.navBar}`}  >
   <div className="container-fluid">
   <span class="navbar-brand mb-0 h1">Portfolio</span>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

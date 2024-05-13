@@ -1,26 +1,17 @@
 /*!*******************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/page.module.css ***!
   \*******************************************************************************************************************************************************************************************************************************************************************/
-.page_main__GlU4n {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center; 
-  padding: 6rem;*/
-  min-height: 100vh;
+.page_navBar__YFHxz{
   background-color: #C4D6FB;
-  color: #2E323A;
+   box-shadow: 4px 4px 6px #888888;
 }
 
-/* this must not be the correct way to alter css in bootstrap */
 .page_pCard__AlQ7L{
   
   background-color: #C4D6FB ;
   box-shadow:  4px 4px 6px #888888;
 }
 
-.page_black__Lc0C5{
-  color: #2E323A !important;
-}
+
 
 

@@ -4,24 +4,26 @@ import Navbar from './components/Navbar';
 import ProjectCard from './components/ProjectCard';
 export default function Home() {
   return (
-    <main className={styles.main} >
+    <main >
      < Navbar/>
      {/* "position-absolute top-50 start-50 translate-middle" */}
 <section className="body mx-3 px-5 py-3">
 <div className = " py-5 my-5 text-left">
   <div className="row">
-    <div className = "col-8">
-<h4 style={{color: "#FF807C"}}> Hi, my name is,</h4>
+    <div className = "col-8 w-50">
+<h4 style={{color: "#FF807C"}}> Hi, my name is</h4>
 <h1> Siera Meaux. <br/> I'm a Full-Stack Developer</h1>
 <p>who doubles as a UX designer. I enjoy in building accessible projects that make life more fun.
    I am currently  volunteering at Code for Philly, working with the non-profit Vote Wise in updating their site. </p>
+
    </div>
 {/* add a link ot my vote wise github contributions */}
-<div className="col text-center align-content-center"> this is an image placeholder</div>
+
+<div className="col text-center align-content-center"  style={{color: "#FF807C"}}> this is an image placeholder</div>
 </div>
 </div>
 <section className="aboutMe">
-  <h4> About Me</h4>
+  <h4 style={{color: "#FF807C"}}> About Me</h4>
   <p>I became interested in software development while taking a certificate for UX/UI design Nov 2022. There I was introduced
      to CSS, HTML, Bootstrap, and Javascript. After the certificate, I decided to study software development to make websites,
       and use my UX/UI skills to improve my work. Since learning full-stack development, I’ve created two full-stack websites 
@@ -30,7 +32,7 @@ export default function Home() {
 <br/>
 I am familiar with Agile methodologies as well as the following technologies:</p>
 {/* this is the ever updating tool matrix */}
-<div class="container text-center w-50 my-5" style={{fontWeight:"bold"}}>
+<div class="container text-center w-50 my" style={{fontWeight:"bold"}}>
   <div class="row my-3">
     <div class="col">
       Javascript
@@ -70,7 +72,7 @@ I am familiar with Agile methodologies as well as the following technologies:</p
     Figma
   </div>
   <div class="col">
-    Bootstrap
+    Bootstrap 5
   </div><div class="col">
    Next.JS
   </div>
@@ -79,22 +81,22 @@ I am familiar with Agile methodologies as well as the following technologies:</p
 </section>
  
 
-    <h4> Some Projects I've Worked On Recently</h4>
+    <h4 style={{color: "#FF807C"}}> Some Projects I've Worked On Recently</h4>
     <div className = "parentProject d-flex flex-column justify-content-center align-items-center my-4 ">
       <ProjectCard 
-      image = "../public/next.svg"
+      image = "/next.svg"
       title = "Portfolio Website"
       subtitle = "The process of designing and creating this website following the UX Design lifecycle through multiple iterations. This website aims to represent my work as a designer and engineer so far!" 
        />
 
 <ProjectCard 
-      image = "../public/next.svg"
+      image = "/next.svg"
       title = "Kindful"
       subtitle ="Spreading Kindness and Community through mutual and local collaboration (aid-giving).  This is a great example of my UX design process."
        />
 
 <ProjectCard 
-      image = "../public/next.svg"
+      image = "/next.svg"
       title = "Expensify"
       subtitle = "A friendly customizable expense tracker that uses authentication to customize user experience." 
        />
@@ -102,7 +104,9 @@ I am familiar with Agile methodologies as well as the following technologies:</p
       <ProjectCard />
     <Callback /> */}
     </div>
+    <div className="footer container text-center my-5 pt-5">
     <p> Designed & Build by Siera Meaux</p>
+    </div>
     </section>
     </main>
   );
