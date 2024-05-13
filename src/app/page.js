@@ -80,13 +80,23 @@ I am familiar with Agile methodologies as well as the following technologies:</p
  
 
     <h4> Some Projects I've Worked On Recently</h4>
-    <div className = "parentProject d-flex justify-content-center  ">
+    <div className = "parentProject d-flex flex-column justify-content-center align-items-center my-4 ">
       <ProjectCard 
       image = "../public/next.svg"
       title = "Portfolio Website"
-      subtitle = "The process of designing and creating this website following the UX Design lifecycle
-       and through the multiple iterations. This process also includes coding the website as a full stack 
-       developer. This website aims to represent my work as a designer and engineer so far!" 
+      subtitle = "The process of designing and creating this website following the UX Design lifecycle through multiple iterations. This website aims to represent my work as a designer and engineer so far!" 
+       />
+
+<ProjectCard 
+      image = "../public/next.svg"
+      title = "Kindful"
+      subtitle ="Spreading Kindness and Community through mutual and local collaboration (aid-giving).  This is a great example of my UX design process."
+       />
+
+<ProjectCard 
+      image = "../public/next.svg"
+      title = "Expensify"
+      subtitle = "A friendly customizable expense tracker that uses authentication to customize user experience." 
        />
       {/* <ProjectCard />
       <ProjectCard />

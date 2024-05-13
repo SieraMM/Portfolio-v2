@@ -12,6 +12,9 @@ export default function ProjectCard({image, title, subtitle}){
               <h5 className="card-title pb-3">{title}</h5>
               <p className="card-text py-2">{subtitle}</p>
               {/* <p> gonna hve to make a small link thing</p> */}
+              <div>
+                <a></a>
+              </div>
             </div>
           </div>
         </div>
