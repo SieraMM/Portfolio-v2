@@ -2,31 +2,32 @@ import Image from "next/image";
 import styles from "../page.module.css";
 import Navbar from '../components/Navbar';
 import ProjectCard from '../components/ProjectCard';
-import Footer from '../components/Footer';
+
 export default function Kindful() {
   return (
     <main>
+       
      <Navbar/>
-    {/*<div class="jumbotron jumbotron-fluid">
-    <div class="d-flex flex-column justify-contents-center mocktrok">
-        <img src="/pages/KindfulCS/Images/AP HOME.svg" style="height: 500px;" class="img-fluid">
-    </div>
+     
+     <div className="p-5 mb-4 bg-body-tertiary rounded-3">
+        <img src="/kindful/AP HOME.svg" className="img-fluid"/>
+
 </div>
-<!--end Jumbo-->
+{/* end Jumbo--> */}
 
 
-<div class=" infoDump">
+<div className="summary">
 
     <h1>Spreading Kindness and Community</h1>
-    <div class="d-flex justify-content-center ">
-        <div class="d-flex flex-column Overview">
+    <div className="d-flex justify-content-center ">
+        <div className="d-flex flex-column Overview">
             <h4 id="topper"> Overview</h4>
             <p id="topper"> For the final project of the bootcamp, me and three other classmates were tasked
                 with creating a landing page and a mobile app that is compatible with one other interface. Let
                 me introduce you to “Kindful”, an app where people can be kind to their neighbors or help them
                 complete tasks, and receive rewards. Our app has the goal of increaing mutual aid in communities.</p>
         </div>
-        <div class="d-flex flex-column role">
+        <div className="d-flex flex-column role">
             <h4 id="topper"> Role</h4>
             <p id="topper"> User Research, Survey Design, Prototyping, Coding the Landing page</p>
             <h4 id="topper"> Timeframe</h4>
@@ -34,6 +35,7 @@ export default function Kindful() {
         </div>
     </div>
 </div>
+{/*
 <div class="margin">
 
     <div class="container">
