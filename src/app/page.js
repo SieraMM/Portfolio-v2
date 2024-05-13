@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Navbar from './components/Navbar';
 import ProjectCard from './components/ProjectCard';
+import Footer from './components/Footer';
 export default function Home() {
   return (
     <main>
@@ -27,10 +28,12 @@ export default function Home() {
 
 <section className="aboutMe text-center justify-content-center mx-5 px-5">
   <h5 className="pb-4"> About Me</h5>
-  <p className="fs-5">I became interested in software development while taking a certificate for UX/UI design Nov 2022. There I was introduced
-     to CSS, HTML, Bootstrap, and Javascript. After the certificate, I decided to study software development to make websites,
-      and use my UX/UI skills to improve my work. Since learning full-stack development, I’ve created two full-stack websites 
-      (including the one you’re on), multiple pull requests for volunteer projects, and many different personal projects.</p>
+  <p className="fs-5">I became interested in software development while taking a certificate for UX/UI design in 2022. There I was introduced
+     to basic front-end development. After the certificate, I decided to study software development because I was drawn to both the creative and problem-solving aspects of the job.
+     Moreover, my UX/UI design background would help me create better projects individually or with teams. Since learning full-stack development, I’ve created websites 
+      (including the one you’re on), multiple pull requests for volunteer projects, and various personal projects.</p>
+  <p className="fs-5"> When I'm not coding, you can find me reading about fantasy worlds, experimenting with household cuisines,
+   and soaking up inspiration from the world around me. I believe that a well-rounded approach to life fuels my creativity and adds depth to my work. </p>
 
 
 <p className="fs-5">I am familiar with Agile methodologies as well as the following technologies:</p>
@@ -107,6 +110,7 @@ export default function Home() {
       <ProjectCard />
     <Callback /> */}
     </div>
+    <Footer/>
     <div className="footer container text-center my-5 pt-5">
     <p> Designed & Build by Siera Meaux</p>
     </div>
