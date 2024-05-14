@@ -9,36 +9,36 @@ export default function Kindful() {
        
      <Navbar/>
      
-     <div className="p-5 mb-4 bg-body-tertiary rounded-3">
+     <div className="p-5 mb-4 bg-body-tertiary  rounded-3">
         <img src="/kindful/AP HOME.svg" className="img-fluid"/>
 
 </div>
 {/* end Jumbo--> */}
+<section className="body mx-5 px-5 py-3">
 
+<div className="summary border-bottom border-black border-2">
 
-<div className="summary">
-
-    <h1>Spreading Kindness and Community</h1>
+    <h2 className="my-4 text-center">Spreading Kindness and Community</h2>
+    
     <div className="d-flex justify-content-center ">
-        <div className="d-flex flex-column Overview">
-            <h4 id="topper"> Overview</h4>
-            <p id="topper"> For the final project of the bootcamp, me and three other classmates were tasked
-                with creating a landing page and a mobile app that is compatible with one other interface. Let
-                me introduce you to “Kindful”, an app where people can be kind to their neighbors or help them
-                complete tasks, and receive rewards. Our app has the goal of increaing mutual aid in communities.</p>
+        <div className="d-flex flex-column mt-3 me-3 w-75">
+            <h4> Overview</h4>
+            <p > As the culmination of our bootcamp experience, my team of three other designers and I  were tasked
+                with creating a landing page, mobile app,and watch interface for any project we want. Let
+                me introduce you to <i>Kindful</i>,an innovative platform designed to foster kindness and community engagement by asking for help. Our goal is to bolster mutual aid.</p>
         </div>
-        <div className="d-flex flex-column role">
-            <h4 id="topper"> Role</h4>
-            <p id="topper"> User Research, Survey Design, Prototyping, Coding the Landing page</p>
-            <h4 id="topper"> Timeframe</h4>
-            <p id="topper"> 3 Weeks</p>
+        <div className="d-flex flex-column role ms-2 mt-3">
+            <h4> Role</h4>
+            <p > User Research, Survey Design, Prototyping, Developing</p>
+            <h4> Timeframe</h4>
+            <p> 3 Weeks</p>
         </div>
     </div>
 </div>
-{/*
-<div class="margin">
 
-    <div class="container">
+
+
+    <div className=" mt-5">
 
         <h2>Brainstorming </h2>
 
@@ -48,10 +48,10 @@ export default function Kindful() {
             to move forward with? </p>
     </div>
 
-    <div class="d-flex flex-column justify-contents-center">
-        <img src="/pages/KindfulCS/Images/brainstorm.svg" class="img-fluid doubleImgWidth">
+    <div className="d-flex flex-column justify-contents-center">
+        <img src="/kindful/brainstorm.svg" className=" w-50"/>
     </div>
-    <div class="container">
+    <div className="container">
 
         <p>We chose a mindfulness app, but decided that ours would be different from other apps by incorporating
             a points and rewards system. But that
@@ -67,10 +67,11 @@ export default function Kindful() {
             community to share the joy and struggles of life with.
         </p>
     </div>
-    <div class="d-flex flex-column justify-contents-center">
-        <img src="/pages/KindfulCS/Images/meetMara.svg" class="img-fluid imgWidth">
+    <div className="d-flex flex-column justify-contents-center">
+        <img src="/kindful/meetMara.svg" className="img-fluid"/>
     </div>
-    <div class="container">
+   
+    <div className="container">
 
         <p>So our next step was designing an <b>interview and survey </b>. We asked participants about their
             history with
@@ -80,40 +81,39 @@ export default function Kindful() {
         <p>I designed the survey on typeform. There were 10 responses. The following are some of the questions
             and their results.</p>
     </div>
-    <div class="d-flex flex-column justify-contents-center">
-        <img src="/pages/KindfulCS/Images/interview1.svg" class="img-fluid imgWidth">
-        <img src="/pages/KindfulCS/Images/interview2.svg" class="img-fluid imgWidth">
-        <img src="/pages/KindfulCS/Images/interview3.svg" class="img-fluid imgWidth">
-        <img src="/pages/KindfulCS/Images/interview4.svg" class="img-fluid imgWidth">
-        <img src="/pages/KindfulCS/Images/interview5.svg" class="img-fluid imgWidth">
+    <div className="d-flex flex-column justify-contents-center">
+        <img src="/kindful/interview2.svg" className="img-fluid imgWidth"/>
+        <img src="/kindful/interview3.svg" className="img-fluid imgWidth"/>
+        <img src="/kindful/interview4.svg" className="img-fluid imgWidth"/>
+        <img src="/kindful/interview5.svg" className="img-fluid imgWidth"/>
     </div>
 
-    <div class=" container">
+    <div className=" container">
         <p>Our interviews gave us a lot of data.</p>
     </div>
-    <div class="d-flex flex-column justify-contents-center imgWidth">
-        <img src="/pages/KindfulCS/Images/interviewData.svg" class="img-fluid" alt="Interview Data">
+    <div className="d-flex flex-column justify-contents-center imgWidth">
+        <img src="/kindful/interviewData.svg" className="img-fluid" alt="Interview Data"/>
         <figcaption> Interview Data</figcaption>
     </div>
 
-    <div class=" container">
+    <div className=" container">
         <p> So we broke it up further into an affinity diagram.
         </p>
     </div>
-    <div class="d-flex flex-column justify-contents-center imgWidth">
-        <img src="/pages/KindfulCS/Images/affinityDiagram.svg" class="img-fluid" alt="Affinity Diagram">
+    <div className="d-flex flex-column justify-contents-center imgWidth">
+        <img src="/kindful/affinityDiagram.svg" className="img-fluid" alt="Affinity Diagram"/>
         <figcaption> Affinity Diagram</figcaption>
     </div>
-    <div class=" container">
+    <div className=" container">
         <p> Our final iteration of the affinity diagram.
         </p>
     </div>
-    <div class="d-flex flex-column justify-contents-center imgWidth">
-        <img src="/pages/KindfulCS/Images/affinityDiagramOrdered.svg" class="img-fluid" alt=" Final Affinity Diagram">
+    <div className="d-flex flex-column justify-contents-center imgWidth">
+        <img src="/kindful/affinityDiagramOrdered.svg" className="img-fluid" alt=" Final Affinity Diagram"/>
         <figcaption> Final Iteration of Affinity Diagram</figcaption>
     </div>
 
-    <div class=" container ">
+    <div className=" container ">
         <p> Using this data we crafted a user insight statement. Our user, who is concerned with people
             around her, needs a simple and consistent way to be kind to herself and others because she
             enjoys the feeling she gets from helping other people.</p>
@@ -121,11 +121,11 @@ export default function Kindful() {
     </div>
 
 
-    <div class="d-flex flex-column justify-contents-center imgWidth">
-        <img src="/pages/KindfulCS/Images/protoPersona.svg" alt="proto-persona" class="img-fluid">
+    <div className="d-flex flex-column justify-contents-center imgWidth">
+        <img src="/kindful/protoPersona.svg" alt="proto-persona" className="img-fluid"/>
 
     </div>
-    <div class=" container ">
+    <div className=" container ">
         <h2> Competitor Analysis</h2>
         <p>Before brainstorming the features for our app we conducted a competitor analysis to see what other
             successful
@@ -154,62 +154,62 @@ export default function Kindful() {
             favorite concepts
             that would best serve our users.</p>
     </div>
-    <div class="d-flex flex-column justify-contents-center imgWidth">
-        <img src="/pages/KindfulCS/Images/featureList.svg" class="img-fluid" alt=" Feature Analysis">
+    <div className="d-flex flex-column justify-contents-center imgWidth">
+        <img src="/kindful/featureList.svg" className="img-fluid" alt=" Feature Analysis"/>
         <figcaption> Feature Analysis</figcaption>
     </div>
-    <div class=" container ">
+    <div className=" container ">
         <p>Then came the <b>Feature Prioritization Matrix </b> to narrow down our ideas. From this, we
             decided the primary feature of our
             app would be facilitating opportunities for users to do kind acts for others in their community.
             Other features would
             be points, badges, and closing daily rings in order to encourage retention.</p>
     </div>
-    <div class="d-flex flex-column justify-contents-center imgWidth">
-        <img src="/pages/KindfulCS/Images/featureAnalysis.svg" class="img-fluid" alt=" Feature Prioritization matrix">
+    <div className="d-flex flex-column justify-contents-center imgWidth">
+        <img src="/kindful/featureAnalysis.svg" className="img-fluid" alt=" Feature Prioritization matrix"/>
         <figcaption> Feature Prioritization matrix</figcaption>
     </div>
 
-    <div class="container">
+    <div className="container">
         <h2> Margaret's Story</h2>
         <p> We developed a storyboard to further clarify our solution and how users would interact with
             our app.</p>
     </div>
-    <!--storyboard-->
-    <div class="d-flex flex-column justify-contents-center imgWidth">
-        <img src="/pages/KindfulCS/Images/storyboard.svg" class="img-fluid" alt=" Story Board">
+    {/* <!--storyboard--> */}
+    <div className="d-flex flex-column justify-contents-center imgWidth">
+        <img src="/kindful/storyboard.svg" className="img-fluid" alt=" Story Board"/>
     </div>
-    <!--end storyboard-->
+    {/* <!--end storyboard--> */}
 
-    <div class="container">
+    <div className="container">
         <h2> Task Flows!</h2>
         <p>The Storyboard allowed us to create four main task flows for Margaret. </p>
         <p> 1. Sign up for Kindful and view the tutorial onboarding screens</p>
     </div>
-    <div class="d-flex  justify-contents-center ">
-        <img src="/pages/KindfulCS/Images/taskFlow1.svg" class="img-fluid imgWidth " alt="task 1">
+    <div className="d-flex  justify-contents-center ">
+        <img src="/kindful/taskFlow1.svg" className="img-fluid imgWidth " alt="task 1"/>
     </div>
-    <div class="container">
+    <div className="container">
         <p> 2. Complete an act of kindness for a neighbor</p>
     </div>
-    <div class="d-flex  justify-contents-center ">
-        <img src="/pages/KindfulCS/Images/taskFlow2.svg" class="img-fluid imgWidth " alt="task 2">
+    <div className="d-flex  justify-contents-center ">
+        <img src="/kindful/taskFlow2.svg" className="img-fluid imgWidth " alt="task 2"/>
     </div>
-    <div class="container">
+    <div className="container">
         <p> 3. Request an act of Kindness</p>
     </div>
-    <div class="d-flex justify-contents-center ">
-        <img src="/pages/Kindful CS/Images/taskFlow3.svg" class="img-fluid imgWidth " alt="task 3">
+    <div className="d-flex justify-contents-center ">
+        <img src="/kindful/taskFlow3.svg" className="img-fluid imgWidth " alt="task 3"/>
     </div>
-    <div class="container">
+    <div className="container">
         <p> 4. View weekly Kindful status on an smartwatch</p>
     </div>
-    <div class="d-flex justify-contents-center ">
-        <img src="/pages/KindfulCS/Images/taskflow4.svg" class="img-fluid imgWidth " alt="task 4">
+    <div className="d-flex justify-contents-center ">
+        <img src="/kindful/taskflow4.svg" className="img-fluid imgWidth " alt="task 4"/>
     </div>
 
-
-    <div class="container">
+ 
+    <div className="container">
 
         <h2> Prototyping & Testing: Round 1</h2>
         <p>At this point we had a good idea of what our app was about. So now for the fun part --
@@ -217,27 +217,27 @@ export default function Kindful() {
         </p>
         <p> Here are some of our paper sketches</p>
     </div>
-    <div class="d-flex justify-contents-center ">
-        <img src="/pages/KindfulCS/Images/IlikeiWish.svg" class="img-fluid imgWidth " alt="task 4">
+    <div className="d-flex justify-contents-center ">
+        <img src="/kindful/IlikeiWish.svg" className="img-fluid imgWidth " alt="task 4"/>
     </div>
-    <div class="d-flex justify-contents-center ">
-        <img src="/pages/KindfulCS/Images/IlikeiWish.svg" class="img-fluid imgWidth " alt="task 4">
+    <div className="d-flex justify-contents-center ">
+        <img src="/kindful/IlikeiWish.svg" className="img-fluid imgWidth " alt="task 4"/>
     </div>
-    <div class="d-flex justify-contents-center ">
-        <img src="/pages/KindfulCS/Images/IlikeiWish.svg" class="img-fluid imgWidth " alt="task 4">
+    <div className="d-flex justify-contents-center ">
+        <img src="/kindful/IlikeiWish.svg" className="img-fluid imgWidth " alt="task 4"/>
     </div>
-    <div class="d-flex justify-contents-center ">
-        <img src="/pages/KindfulCS/Images/IlikeiWish.svg" class="img-fluid imgWidth " alt="task 4">
+    <div className="d-flex justify-contents-center ">
+        <img src="/kindful/IlikeiWish.svg" className="img-fluid imgWidth " alt="task 4"/>
     </div>
 
-    <div class="container">
+    <div className="container">
         <p>And now <b>lo-fi wireframes</b>.</p>
     </div>
-    <div class="d-flex flex-column justify-contents-center">
-        <img src="/pages/KindfulCS/Images/lo-fi wireframe.svg" alt="Lo-fi prototypes" class="img-fluid imgWidth">
+    <div className="d-flex flex-column justify-contents-center">
+        <img src="/pages/KindfulCS/Images/lo-fi wireframe.svg" alt="Lo-fi prototypes" className="img-fluid imgWidth"/>
     </div>
 
-    <div class="container">
+    <div className="container">
         <p> Time for the first round of usability testing on our 4 tasks. We had 4 different people test our
             lo-fi prototype.
             These were the goals:</p>
@@ -257,25 +257,25 @@ export default function Kindful() {
             available acts of kindness screens.
         </p>
     </div>
+{/*
+    <div className="container">
 
-    <div class="container">
-
-        <div class="row">
-            <div class="col  taskBubble" style="background-color: #CA68EC;">
+        <div className="row">
+            <div className="col  taskBubble" style="background-color: #CA68EC;">
                 <h4> Task 1 Results</h4>
                 <p> 100% success rate</p>
             </div>
-            <div class="col  taskBubble" style="background-color: #219653;">
+            <div className="col  taskBubble" style="background-color: #219653;">
                 <h4> Task 2 Results</h4>
                 <p> 62.5% success rate</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col  taskBubble" style="background-color: #F14E3A;">
+        <div className="row">
+            <div className="col  taskBubble" style="background-color: #F14E3A;">
                 <h4> Task 3 Results</h4>
                 <p> 75% success rate</p>
             </div>
-            <div class="col  taskBubble" style="background-color: #2F80ED;">
+            <div className="col  taskBubble" style="background-color: #2F80ED;">
                 <h4> Task 4 Results</h4>
                 <p> 87.5% success rate</p>
             </div>
@@ -289,7 +289,7 @@ export default function Kindful() {
     </div>
 
 
-    <div class="container">
+    <div className="container">
         <h2> Moodboard & Style Guide</h2>
         <p> We used Pinterest to collaborate on a mood board as a team. We wanted our app to feel bright and
             joyful. We selected imagery with colorful
@@ -297,12 +297,12 @@ export default function Kindful() {
             inspiration images together in a grid in Figma
             to refer to during our design process. </p>
     </div>
-    <div class="d-flex justify-contents-center ">
-        <img src="/pages/KindfulCS/Images/moodboard.svg" class="img-fluid imgWidth">
+    <div className="d-flex justify-contents-center ">
+        <img src="/pages/KindfulCS/Images/moodboard.svg" className="img-fluid imgWidth">
         <figcaption> Moodboard</figcaption>
     </div>
 
-    <div class="container">
+    <div className="container">
 
         <p>We then selected the images from our Mood Board that best exemplified the design direction for our
             app. The UI for our app would be energetic,
@@ -312,28 +312,28 @@ export default function Kindful() {
             contrast black and white buttons to match.  </p>
     </div>
 
-    <div class="d-flex flex-column justify-contents-center imgWidth">
-        <img src="/pages/KindfulCS/Images/styleguide.svg" class="img-fluid">
+    <div className="d-flex flex-column justify-contents-center imgWidth">
+        <img src="/pages/KindfulCS/Images/styleguide.svg" className="img-fluid">
         <figcaption> Styleguide</figcaption>
     </div>
 
-    <div class="container">
+    <div className="container">
         <h2> Prototyping and Testing: Round 2 </h2>
         <p>We returned to our mid-fi prototype and applied the changes to create a hi-fi prototype. </p>
     </div>
 
-    <div class="d-flex flex-column justify-contents-center imgWidth ">
-        <img src="/pages/KindfulCS/Images/hi-fi screenshots.svg" class="img-fluid narrowImgWidth">
+    <div className="d-flex flex-column justify-contents-center imgWidth ">
+        <img src="/pages/KindfulCS/Images/hi-fi screenshots.svg" className="img-fluid narrowImgWidth">
         <figcaption> Hi-fi prototype</figcaption>
     </div>
-    <div class="container">
+    <div className="container">
 
         <p>To view our high fidelity mobile prototypes: <a
                 href="https://www.figma.com/proto/Ar4otkCZgkdwC8ZXRtFXV4/Kindful?page-id=68%3A345&type=design&node-id=161-465&viewport=555%2C-127%2C1&t=OeTn2gkYlMIX7tHs-1&scaling=scale-down&starting-point-node-id=181%3A269&show-proto-sidebar=1&mode=design"
-                target="_blank" class="bodyLink">click here</a>.</p>
+                target="_blank" className="bodyLink">click here</a>.</p>
         <p>To view our high fidelity Apple Watch prototypes:<a
                 href="https://www.figma.com/proto/Ar4otkCZgkdwC8ZXRtFXV4/Kindful?page-id=297%3A2528&type=design&node-id=298-2645&viewport=344%2C543%2C0.78&t=JK1gyjqdG0McLy8q-1&scaling=scale-down&starting-point-node-id=298%3A2645&show-proto-sidebar=1&mode=design"
-                target="_blank" class="bodyLink">click here</a>.</p>
+                target="_blank" className="bodyLink">click here</a>.</p>
 
         <p>After we iterated to high fidelity, we revisited Usability Testing to ensure the changes we made
             improved the function of our app.
@@ -345,11 +345,11 @@ export default function Kindful() {
             Indicator remained in view at the bottom of each screen. </p>
     </div>
 
-    <div class="d-flex flex-column justify-contents-center imgWidth ">
+    <div className="d-flex flex-column justify-contents-center imgWidth ">
         <video src="/pages/KindfulCS/videos/artpride-finalV.mov" controls></video>
     </div>
 
-    <div class="container">
+    <div className="container">
         <h2> Marketing Landing Page</h2>
         <p>My teammate used our style guide to design our landing page. Then I translated her design to code
             using Visual
@@ -360,12 +360,12 @@ export default function Kindful() {
             responsive. After instructor feedback, I decided to use the margin property to scatter the images
             while maintaining responsiveness. </p>
         <p>To view the Github Repository: <a href="www.https://github.com/SieraMM/kindful" target="_blank"
-                class="bodyLink">click here </a>.</p>
+                className="bodyLink">click here </a>.</p>
         <p>To view our completed landing page: <a href="https://sieramm.github.io/kindful/" target="_blank"
-                class="bodyLink">click here </a>.</p>
+                className="bodyLink">click here </a>.</p>
     </div>
 
-    <div class="container">
+    <div className="container">
         <h2> What I Learned</h2>
         <p> Throughout this process, I learned how to incorporate new interactions and animations in Figma with the
             purpose
@@ -400,27 +400,28 @@ export default function Kindful() {
     <hr>
     <!-- other work section-->
     <h2> Want More?</h2>
-    <div class="card-deck">
-        <div class="card cardColor">
-            <div class="d-flex flex-column justify-contents-center tinyImgWidth ">
-                <img class="img-fluid" src="/pages/NjArtCS/Images/AP HOME.svg" alt="Project NJ Artpridenj">
+    <div className="card-deck">
+        <div className="card cardColor">
+            <div className="d-flex flex-column justify-contents-center tinyImgWidth ">
+                <img className="img-fluid" src="/pages/NjArtCS/Images/AP HOME.svg" alt="Project NJ Artpridenj">
             </div>
-            <div class="card-body">
-                <h5 class="card-title">NJ Art Pride Redesign</h5>
-                <p class="card-text">A redeisgn of a well-loved community organization</p>
-                <a href="/pages/NjArtCS/index.html" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-        <div class="card cardColor">
-            <div class="d-flex flex-column justify-contents-center tinyImgWidth ">
-                <img class="card-img-top img-fluid" src="/pages/KindfulCS/Images/Group 36.png" alt="Project Portfolio">
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">My Portfolio</h5>
-                <p class="card-text">Find out how I built this website</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div className="card-body">
+                <h5 className="card-title">NJ Art Pride Redesign</h5>
+                <p className="card-text">A redeisgn of a well-loved community organization</p>
+                <a href="/pages/NjArtCS/index.html" className="btn btn-primary">Go somewhere</a>
             </div>
         </div>
+        <div className="card cardColor">
+            <div className="d-flex flex-column justify-contents-center tinyImgWidth ">
+                <img className="card-img-top img-fluid" src="/pages/KindfulCS/Images/Group 36.png" alt="Project Portfolio">
+            </div>
+            <div className="card-body">
+                <h5 className="card-title">My Portfolio</h5>
+                <p className="card-text">Find out how I built this website</p>
+                <a href="#" className="btn btn-primary">Go somewhere</a>
+            </div>
+
     </div> */}
+    </section>
 </main>
   )}
