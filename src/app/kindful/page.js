@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import styles from "../page.module.css";
-import Navbar from "../components/Navbar";
+import InnerNav from "../components/InnerNav";
 import ProjectCard from "../components/ProjectCard";
 import React, { useEffect } from "react";
 
@@ -20,7 +20,7 @@ export default function Kindful() {
   }, []);
   return (
     <main>
-      <Navbar />
+      <InnerNav />
 
       <div className="container p-5 mb-4  rounded-3">
         <div className="container-fluid py-5">
@@ -49,6 +49,10 @@ export default function Kindful() {
               <p> User Research, Survey Design, Prototyping, Developing</p>
               <h3> Timeframe</h3>
               <p> 3 Weeks</p>
+              <div className = "container">
+                <a href = "https://github.com/SieraMM/kindful" target="_blank" className="mx-3"><Image src="/github.svg" alt="Github" width="32" height ="32"/></a>
+                <a href = "https://sieramm.github.io/kindful/" target="_blank"><Image src="/exLink.svg" alt="External link" width="32" height ="32"/></a>
+              </div>
             </div>
           </div>
         </div>
@@ -396,26 +400,28 @@ export default function Kindful() {
           </p>
         </div>
     
-    <div className="container">
+    <div className="container w-50">
 
-        <div className="row">
-            <div className="col" style={{backgroundColor: "#CA68EC"}}>
-                <h4> Task 1 Results</h4>
-                <p> 100% success rate</p>
+        <div className="row g-1 ">
+            <div className="col m-2 p-2 rounded-3" style={{backgroundColor: "#CA68EC"}}>
+                <h4 className="mt-3"> Task 1 </h4>
+                <p> 100% success </p>
             </div>
-            <div className="col" style={{backgroundColor: "#ed6335"}}>
-                <h4> Task 2 Results</h4>
-                <p> 62.5% success rate</p>
+            <div className="col m-2 p-2 rounded-3" style={{backgroundColor: "#CA68EC"}}>
+                <h4 className="mt-3"> Task 2 </h4>
+                <p> 62.5% success </p>
             </div>
         </div>
-        <div className="row">
-            <div className="col" style={{backgroundColor: "#F14E3A"}}>
-                <h4> Task 3 Results</h4>
-                <p> 75% success rate</p>
+        <div className="row g-1">
+            <div className="col m-2 p-2 rounded-3" style={{backgroundColor: "#CA68EC"}}>
+                
+                     <h4 className="mt-3"> Task 3 </h4>
+                <p> 75% success </p>
+               
             </div>
-            <div className="col" style={{backgroundColor: "#2F80ED"}}>
-                <h4> Task 4 Results</h4>
-                <p> 87.5% success rate</p>
+            <div className="col m-2 p-2 rounded-3" style={{backgroundColor: "#CA68EC"}}>
+                <h4 className="mt-3"> Task 4 </h4>
+                <p> 87.5% success </p>
             </div>
 
         </div>
@@ -450,7 +456,7 @@ export default function Kindful() {
             contrast black and white buttons to match.  </p>
     </div>
 
-    <div className="d-flex flex-column justify-contents-center imgWidth">
+    <div className="d-flex flex-column justify-contents-center">
         <img src="/kindful/styleguide.svg" className={styles.imgWidth}/>
         <small> Styleguide</small>
     </div>
@@ -460,8 +466,8 @@ export default function Kindful() {
         <p>We returned to our mid-fi prototype and applied the changes to create a hi-fi prototype. </p>
     </div>
 
-    <div className="d-flex flex-column justify-contents-center imgWidth ">
-        <img src="/kindful/hi-fi screenshots.svg" className="img-fluid narrowImgWidth"/>
+    <div className="d-flex flex-column justify-contents-center w-50 ">
+        <img src="/kindful/hi-fi screenshots.svg" className={styles.imgWidth}/>
         <small> Hi-fi prototype</small>
     </div>
     <div className="container">
@@ -469,38 +475,38 @@ export default function Kindful() {
         <p>To view our high fidelity mobile prototypes: <a
                 href="https://www.figma.com/proto/Ar4otkCZgkdwC8ZXRtFXV4/Kindful?page-id=68%3A345&type=design&node-id=161-465&viewport=555%2C-127%2C1&t=OeTn2gkYlMIX7tHs-1&scaling=scale-down&starting-point-node-id=181%3A269&show-proto-sidebar=1&mode=design"
                 target="_blank" className="bodyLink">click here</a>.</p>
-        <p>To view our high fidelity Apple Watch prototypes:<a
+        <p>To view our high fidelity Apple Watch prototypes: <a
                 href="https://www.figma.com/proto/Ar4otkCZgkdwC8ZXRtFXV4/Kindful?page-id=297%3A2528&type=design&node-id=298-2645&viewport=344%2C543%2C0.78&t=JK1gyjqdG0McLy8q-1&scaling=scale-down&starting-point-node-id=298%3A2645&show-proto-sidebar=1&mode=design"
                 target="_blank" className="bodyLink">click here</a>.</p>
 
-        <p>After we iterated to high fidelity, we revisited Usability Testing to ensure the changes we made
+        <p>After we iterated to high fidelity, we revisited <b>usability testing</b> to ensure the changes we made
             improved the function of our app.
             Again, we tested 4 subjects using the same objectives from our original round of testing. This time
-            we had a 100% success rate for all participants for all 4 tasks!
+            we had a 100% success rate for all participants for all 4 tasks!</p>
+            <p>
             A huge improvement from the first round of testing. Again, the test wasn’t without tiny hiccups. We
             originally missed connecting some frames that lived outside of
             our task flows. We made the necessary adjustments and fixed things like ensuring the iOS Home
             Indicator remained in view at the bottom of each screen. </p>
     </div>
 
-    <div className="d-flex flex-column justify-contents-center imgWidth ">
+    <div className={`d-flex flex-column justify-contents-center ${styles.imgWidth} `}>
         <video src="/pages/KindfulCS/videos/artpride-finalV.mov" controls></video>
     </div>
 
     <div className="container">
         <h2> Marketing Landing Page</h2>
-        <p>My teammate used our style guide to design our landing page. Then I translated her design to code
-            using Visual
-            Studio Code and Git Hub. I used Bootstrap to format the page, and HTML and CSS to customize the
+        <p>My teammate used our style guide to design our <a href="https://sieramm.github.io/kindful/" target="_blank"
+                className="bodyLink">landing page </a>. Then I translated her design to code
+            using Visual Studio Code and GitHub.
+             I used Bootstrap to format the page, and HTML and CSS to customize the
             framework. The most
             difficult part for me was formatting the images. At first I used the position property, but quickly
             realized that was not
             responsive. After instructor feedback, I decided to use the margin property to scatter the images
             while maintaining responsiveness. </p>
-        <p>To view the Github Repository: <a href="www.https://github.com/SieraMM/kindful" target="_blank"
-                className="bodyLink">click here </a>.</p>
-        <p>To view our completed landing page: <a href="https://sieramm.github.io/kindful/" target="_blank"
-                className="bodyLink">click here </a>.</p>
+     
+     
     </div>
 
     <div className="container">
@@ -521,16 +527,16 @@ export default function Kindful() {
             member assisted us in clarifying
             our task flow, and reminded us this was a beginning iteration.
         </p>
-        <p>For future iterations we would to incorporate the following feature: </p>
-        <ul>
-            <li> Bring the messaging piece into the app, so that we could regulate the communication between users
+        <p>For future iterations we would incorporate the following features: </p>
+        <ul className="list-group">
+            <li class="list-group-item" > Bring the messaging piece into the app, so that we could regulate the communication between users
             </li>
-            <li> Expand the rewards and badging for acquired points </li>
-            <li> Partner with local organizations and stores to offer discounts or coupons as rewards for points
+            <li class="list-group-item" > Expand the rewards and badging for acquired points </li>
+            <li class="list-group-item" > Partner with local organizations and stores to offer discounts or coupons as rewards for points
             </li>
-            <li>A community section that could have blogs about ideas on how to do good locally, volunteering
+            <li class="list-group-item" >A community section that could have blogs about ideas on how to do good locally, volunteering
                 opportunities</li>
-            <li>Donation opportunities as rewards. For example 500 points could equal a $50 donation to a charity of
+            <li class="list-group-item" >Donation opportunities as rewards. For example 500 points could equal a $50 donation to a charity of
                 your choice in your name</li>
         </ul>
     </div>

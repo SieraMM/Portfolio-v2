@@ -8,7 +8,8 @@ export default function Home() {
     <main>
      < Navbar/>
      {/* "position-absolute top-50 start-50 translate-middle" */}
-<section className="body mx-5 px-5 py-3">
+     <div data-bs-spy="scroll" data-bs-target="#navbar-home" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example  p-3 rounded-2 mx-5 px-5 py-5 my-5" tabindex="0">
+
 <div className = " py-5 my-5 text-left">
   <div className="row">
     <div className = "col-8 w-50">
@@ -26,7 +27,8 @@ export default function Home() {
 </div>
 
 
-<section className="aboutMe text-center justify-content-center mx-5 px-5">
+<section id="scrollspyAbout" className=" text-center justify-content-center mx-5 px-5">
+  <div className= "space" style={{height: "10vh"}}> </div>
   <h5 className="pb-4"> About Me</h5>
   <p className="fs-5">I became interested in software development while taking a certificate for UX/UI design in 2022. There I was introduced
      to basic front-end development. After the certificate, I decided to study software development because I was drawn to both the creative and problem-solving aspects of the job.
@@ -86,8 +88,8 @@ export default function Home() {
 </div>
 </section>
  
-
-    <h5 className="pb-4 text-center"> Some Projects I've Worked On Recently</h5>
+<div id="scrollspyWork" className= "space" style={{height: "10vh"}}> </div>
+    <h5  className="pb-4 text-center"> Some Projects I've Worked On Recently</h5>
     <div className = "parentProject d-flex flex-column justify-content-center align-items-center my-4 ">
       <ProjectCard 
       image = "/portfolio/originalPortfolioCode.svg"
@@ -106,16 +108,16 @@ export default function Home() {
       title = "Expensify"
       subtitle = "A friendly customizable expense tracker that uses authentication to customize user experience." 
        />
-      {/* <ProjectCard />
-      <ProjectCard />
-    <Callback /> */}
+     
     </div>
    
-    <div className="footer text-center d-flex flex-column justify-contents-center align-contents-center my-5 pt-5">
+    <div className="container text-center w-50  my-5 pt-5">
+      
     <Footer/>
-    <p> Designed & Built by Siera Meaux</p>
+  
+    <small> Designed & Built by Siera Meaux</small>
     </div>
-    </section>
+    </div>
     </main>
   );
 }
