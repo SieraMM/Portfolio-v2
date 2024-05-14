@@ -1,281 +1,419 @@
+"use client";
 import Image from "next/image";
 import styles from "../page.module.css";
-import Navbar from '../components/Navbar';
-import ProjectCard from '../components/ProjectCard';
+import Navbar from "../components/Navbar";
+import ProjectCard from "../components/ProjectCard";
+import React, { useEffect } from "react";
 
 export default function Kindful() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src =
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    // Cleanup
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
   return (
     <main>
-       
-     <Navbar/>
-     
-     <div className="p-5 mb-4 bg-body-tertiary  rounded-3">
-        <img src="/kindful/AP HOME.svg" className="img-fluid"/>
+      <Navbar />
 
-</div>
-{/* end Jumbo--> */}
-<section className="body mx-5 px-5 py-3">
-
-<div className="summary border-bottom border-black border-2">
-
-    <h2 className="my-4 text-center">Spreading Kindness and Community</h2>
-    
-    <div className="d-flex justify-content-center ">
-        <div className="d-flex flex-column mt-3 me-3 w-75">
-            <h4> Overview</h4>
-            <p > As the culmination of our bootcamp experience, my team of three other designers and I  were tasked
-                with creating a landing page, mobile app,and watch interface for any project we want. Let
-                me introduce you to <i>Kindful</i>,an innovative platform designed to foster kindness and community engagement by asking for help. Our goal is to bolster mutual aid.</p>
+      <div className="container p-5 mb-4  rounded-3">
+        <div className="container-fluid py-5">
+          <img src="/kindful/AP HOME.svg" className="img-fluid" />
         </div>
-        <div className="d-flex flex-column role ms-2 mt-3">
-            <h4> Role</h4>
-            <p > User Research, Survey Design, Prototyping, Developing</p>
-            <h4> Timeframe</h4>
-            <p> 3 Weeks</p>
+      </div>
+      {/* end Jumbo--> */}
+      <section className="body mx-5 px-5 py-3 text-center">
+        <div className=" container border-bottom border-black border-2">
+          <h2>Kindful: Spreading Kindness and Community</h2>
+
+          <div className="d-flex justify-content-center ">
+            <div className="d-flex flex-column mt-3 me-3 w-75">
+              <h3> Overview</h3>
+              <p>
+                As the culmination of our bootcamp experience, my team of three
+                other designers and I were tasked with creating a landing page,
+                mobile app,and watch interface for any project we want. Let me
+                introduce you to <i>Kindful</i>, an innovative platform designed
+                to foster kindness and community engagement by asking for help.
+                Our goal is to bolster mutual aid.
+              </p>
+            </div>
+            <div className="d-flex flex-column role ms-2 mt-3">
+              <h3> Role</h3>
+              <p> User Research, Survey Design, Prototyping, Developing</p>
+              <h3> Timeframe</h3>
+              <p> 3 Weeks</p>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
 
+        <div className=" container mt-5 text-center">
+          <h2>Brainstorming </h2>
 
+          <p>
+            Our instructors allowed us free reign ont his project. The only
+            rules were that we needed to create a project that was compatible on
+            two interfaces. So we kicked off this project with a brainstorming
+            session. What app ideas do we have that we want to move forward
+            with?{" "}
+          </p>
+        </div>
 
-    <div className=" mt-5">
+        <div className="d-flex flex-column justify-contents-center mx-auto w-50">
+          <img src="/kindful/brainstorm.svg" className={styles.imgWidth} />
+        </div>
+        <div className="container">
+          <p>
+            We chose a mindfulness app, but decided that ours would be different
+            from other apps by incorporating a points and rewards system. But
+            that wasn’t enough. After explaining our idea to our teacher she
+            suggested we don’t focus on mindfulness and instead maybe explore
+            gratitude or kindness.
+          </p>
+          <p>
+            {" "}
+            So we created a proto-persona to have someone in mind while we
+            crafted our survery and interview questions.
+          </p>
 
-        <h2>Brainstorming </h2>
+          <h2> Meet Mara</h2>
 
-        <p>Our instructors allowed us free reign ont his project. The only rules were that we needed to create a
-            project that was compatible on two interfaces.
-            So we kicked off this project with a brainstorming session. What app ideas do we have that we want
-            to move forward with? </p>
-    </div>
+          <p>
+            {" "}
+            Mara is a busy young professional who feels overwhelmed in her daily
+            life. She wants to find a community to share the joy and struggles
+            of life with.
+          </p>
+        </div>
+        <div className="d-flex flex-column justify-contents-center">
+          <img src="/kindful/meetMara.svg" className={styles.imgWidth} />
+        </div>
 
-    <div className="d-flex flex-column justify-contents-center">
-        <img src="/kindful/brainstorm.svg" className=" w-50"/>
-    </div>
-    <div className="container">
+        <div className="container">
+          <p>
+            So our next step was designing an <b>interview and survey </b>. We
+            asked participants about their history with mindfulness apps, what
+            they got out of them, and how/if they were still using the app. We
+            also asked participants how they go about being kind in their daily
+            life, how does it feel, and what stops them from being kind.
+          </p>
+          <p>
+            I designed the survey on typeform. There were 10 responses. The
+            following are some of the questions and their results.
+          </p>
+        </div>
 
-        <p>We chose a mindfulness app, but decided that ours would be different from other apps by incorporating
-            a points and rewards system. But that
-            wasn’t enough. After explaining our idea to our teacher she suggested we don’t focus on mindfulness
-            and instead maybe explore gratitude
-            or kindness.</p>
-        <p> So we created a proto-persona to have someone in mind while we crafted our survery and interview
-            questions.</p>
+        {/* Carousel */}
+        <div id="interviewCarousel" className="carousel carousel-dark  slide">
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <img
+                src="/kindful/interview2.svg"
+                className={`d-block w-100 ${styles.imgWidth}`}
+                alt="userResponse1"
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                src="/kindful/interview3.svg"
+                className={`d-block w-100 ${styles.imgWidth}`}
+                alt="userResponse2"
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                src="/kindful/interview4.svg"
+                className={`d-block w-100 ${styles.imgWidth}`}
+                alt="userResponse3"
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                src="/kindful/interview5.svg"
+                className={`d-block w-100 ${styles.imgWidth}`}
+                alt="userResponse4"
+              />
+            </div>
+          </div>
+          <button
+            className="carousel-control-prev"
+            type="button"
+            data-bs-target="#interviewCarousel"
+            data-bs-slide="prev"
+          >
+            <span
+              className="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Previous</span>
+          </button>
+          <button
+            className="carousel-control-next"
+            type="button"
+            data-bs-target="#interviewCarousel"
+            data-bs-slide="next"
+          >
+            <span
+              className="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Next</span>
+          </button>
+        </div>
 
-        <h2> Meet Mara</h2>
+        {/* End Carousel */}
 
-        <p> Mara is a busy young professional who feels overwhelmed in her daily life. She wants to find a
-            community to share the joy and struggles of life with.
-        </p>
-    </div>
-    <div className="d-flex flex-column justify-contents-center">
-        <img src="/kindful/meetMara.svg" className="img-fluid"/>
-    </div>
-   
-    <div className="container">
+        <div className=" container">
+          <p>
+            Our interviews gave us a lot of data. So we broke it up further into
+            an affinity diagram.
+          </p>
+        </div>
+        <div className="d-flex flex-column justify-contents-center imgWidth">
+          <img
+            src="/kindful/affinityDiagramOrdered.svg"
+            className={styles.imgWidth}
+            alt=" Final Affinity Diagram"
+          />
+          <small> Affinity Diagram</small>
+        </div>
 
-        <p>So our next step was designing an <b>interview and survey </b>. We asked participants about their
-            history with
-            mindfulness apps, what they got out of them, and how/if they were still using the app. We also asked
-            participants how they go about being kind in their daily life, how does it feel, and what stops them
-            from being kind.</p>
-        <p>I designed the survey on typeform. There were 10 responses. The following are some of the questions
-            and their results.</p>
-    </div>
-    <div className="d-flex flex-column justify-contents-center">
-        <img src="/kindful/interview2.svg" className="img-fluid imgWidth"/>
-        <img src="/kindful/interview3.svg" className="img-fluid imgWidth"/>
-        <img src="/kindful/interview4.svg" className="img-fluid imgWidth"/>
-        <img src="/kindful/interview5.svg" className="img-fluid imgWidth"/>
-    </div>
+        <div className=" container ">
+          <p>
+            {" "}
+            Using this data we crafted a user insight statement. Our user, who
+            is concerned with people around her, needs a{" "}
+            <b>simple and consistent</b>
+            way to be kind to herself and others because she enjoys the feeling
+            she gets from helping other people.
+          </p>
+          <h2> Meet Margaret Short</h2>
+        </div>
 
-    <div className=" container">
-        <p>Our interviews gave us a lot of data.</p>
-    </div>
-    <div className="d-flex flex-column justify-contents-center imgWidth">
-        <img src="/kindful/interviewData.svg" className="img-fluid" alt="Interview Data"/>
-        <figcaption> Interview Data</figcaption>
-    </div>
+        <div className="d-flex flex-column justify-contents-center imgWidth">
+          <img
+            src="/kindful/protoPersona.svg"
+            alt="proto-persona"
+            className={styles.imgWidth}
+          />
+        </div>
+        <div className=" container ">
+          <h2> Competitor Analysis</h2>
+          <p>
+            Before brainstorming the features for our app we conducted a
+            competitor analysis to see what other successful apps are doing. Our
+            direct competitors, <i>Calm</i> and <i>Headspace</i>, came from our
+            interviews. Both <i>Calm</i> and <i>Headspace</i> have guided
+            meditations and soundscapes to help with sleep and relaxation.{" "}
+            <i>Calm</i> is the mindfulness app of choice for parents due to ease
+            of use and sleep stories for kids.
+            <i>Headspace</i> offers a structured path to mindfulness. Both apps
+            are well-known, but several users (in our interviews, survey
+            responses and even app reviews) mentioned not using either app
+            beyond the free trial as they did not see the value in paying for
+            the subscription. {" "}
+          </p>
 
-    <div className=" container">
-        <p> So we broke it up further into an affinity diagram.
-        </p>
-    </div>
-    <div className="d-flex flex-column justify-contents-center imgWidth">
-        <img src="/kindful/affinityDiagram.svg" className="img-fluid" alt="Affinity Diagram"/>
-        <figcaption> Affinity Diagram</figcaption>
-    </div>
-    <div className=" container">
-        <p> Our final iteration of the affinity diagram.
-        </p>
-    </div>
-    <div className="d-flex flex-column justify-contents-center imgWidth">
-        <img src="/kindful/affinityDiagramOrdered.svg" className="img-fluid" alt=" Final Affinity Diagram"/>
-        <figcaption> Final Iteration of Affinity Diagram</figcaption>
-    </div>
+          <p>
+            {" "}
+            We used <i>Craigslist</i> and <i>Nextdoor</i> as indirect
+            competitors. Though neither app was created with the intention of
+            spreading kindness, they are both apps that people use to connect
+            with their neighbors for various purposes, including
+            buying/selling/trading items, sharing news, information and
+            recommendations.
+          </p>
 
-    <div className=" container ">
-        <p> Using this data we crafted a user insight statement. Our user, who is concerned with people
-            around her, needs a simple and consistent way to be kind to herself and others because she
-            enjoys the feeling she gets from helping other people.</p>
-        <h2> Meet Margaret Short</h2>
-    </div>
+          <h2> What Does Margaret Want?</h2>
+          <p>
+            {" "}
+            With our user persona and competitor analysis in hand we
+            brainstormed features that Margaret might want. Some of these ideas
+            came straight from our interviews. Then we implemented dot voting to
+            identify our favorite concepts that would best serve our users.
+          </p>
+        </div>
+        <div className="d-flex flex-column justify-contents-center imgWidth">
+          <img
+            src="/kindful/featureList.svg"
+            className={styles.imgWidth}
+            alt=" Feature Analysis"
+          />
+          <small> Feature Analysis</small>
+        </div>
+        <div className=" container ">
+          <p>
+            Then came the <b>Feature Prioritization Matrix </b> to narrow down
+            our ideas. From this, we decided the primary feature of our app
+            would be facilitating opportunities for users to do kind acts for
+            others in their community. Other features would be points, badges,
+            and closing daily rings in order to encourage retention.
+          </p>
+        </div>
+        <div className="d-flex flex-column justify-contents-center imgWidth">
+          <img
+            src="/kindful/featureAnalysis.svg"
+            className={styles.imgWidth}
+            alt=" Feature Prioritization matrix"
+          />
+          <small> Feature Prioritization matrix</small>
+        </div>
 
+        <div className="container">
+          <h2> Margaret's Story</h2>
+          <p>
+            {" "}
+            We developed a storyboard to further clarify our solution and how
+            users would interact with our app.
+          </p>
+        </div>
+        {/* <!--storyboard--> */}
+        <div className="d-flex flex-column justify-contents-center imgWidth">
+          <img
+            src="/kindful/storyboard.svg"
+            className={styles.imgWidth}
+            alt=" Story Board"
+          />
+        </div>
+        {/* <!--end storyboard--> */}
 
-    <div className="d-flex flex-column justify-contents-center imgWidth">
-        <img src="/kindful/protoPersona.svg" alt="proto-persona" className="img-fluid"/>
+        <div className="container justify-content-center">
+          <h2> Task Flows!</h2>
+          <p>
+            The Storyboard allowed us to create 4 main task flows for Margaret.{" "}
+          </p>
+        
+        <div className="row justify-content-center">
+          <div className="col">
+            <div className="card mb-3">
+              <img
+                src="/kindful/taskFlow1.svg"
+                className={styles.imgWidth}
+                alt="task 1"
+              />
+              <div className="card-body">
+                <h5 className="card-title">
+                  1. Sign up for Kindful and view the tutorial onboarding
+                  screens
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row justify-content-center">
+          <div className="col">
+            <div className="card mb-3">
+              <img
+                src="/kindful/taskFlow2.svg"
+                className="card-img-top"
+                alt="task 2"
+              />
+              <div className="card-body">
+                <h5 className="card-title">
+                  2. Complete an act of kindness for a neighbor
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row justify-content-center">
+          <div className="col">
+            <div className="card mb-3">
+              <img
+                src="/kindful/taskFlow3.svg"
+                className="card-img-top"
+                alt="task 3"
+              />
+              <div className="card-body">
+                <h5 className="card-title">3. Request an act of Kindness</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row justify-content-center">
+          <div className="col">
+            <div className="card mb-3">
+              <img
+                src="/kindful/taskFlow4.svg"
+                className="card-img-top"
+                alt="task 4"
+              />
+              <div className="card-body">
+                <h5 className="card-title">
+                  4. View weekly Kindful status on an smartwatch
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
 
-    </div>
-    <div className=" container ">
-        <h2> Competitor Analysis</h2>
-        <p>Before brainstorming the features for our app we conducted a competitor analysis to see what other
-            successful
-            apps are doing. Our direct competitors, Calm and Headspace, came from our interviews. Both Calm and
-            Headspace
-            have guided meditations and soundscapes to help with sleep and relaxation. Calm is the mindfulness
-            app of
-            choice for parents due to ease of use and sleep stories for kids. Headspace offers a structured path
-            to
-            mindfulness. Both apps are well-known but several users (in our interviews, survey responses and
-            even app
-            reviews) mentioned not using either app beyond the free trial as they did not see the value in
-            paying for
-            the subscription.  </p>
+        <div className="container">
+          <h2> Prototyping & Testing: Round 1</h2>
+          <p>
+            At this point we had a good idea of what our app was about. So now
+            for the fun part -- 
+            <b> Prototyping!</b>
+          </p>
+          <p>  Here are our <b>lo-fi wireframes</b>.
+          </p>
+        </div>
+        <div className="d-flex flex-column justify-contents-center">
+          <img
+            src="/kindful/lo-fi wireframe.svg"
+            alt="Lo-fi prototypes"
+            className={styles.imgWidth}
+          />
+        </div>
 
-        <p> We used Craigslist and Nextdoor as indirect competitors. Though neither app was created with the
-            intention of
-            spreading kindness, they are both apps that people use to connect with their neighbors for various
-            purposes,
-            including buying/selling/trading items, sharing news, information and recommendations.</p>
-
-        <h2> What Does Margaret Want?</h2>
-        <p> With our user persona and competitor analysis in hand we brainstormed features that Margaret might
-            want. Some
-            of these ideas came straight from our interviews. Then we implemented dot voting to identify our
-            favorite concepts
-            that would best serve our users.</p>
-    </div>
-    <div className="d-flex flex-column justify-contents-center imgWidth">
-        <img src="/kindful/featureList.svg" className="img-fluid" alt=" Feature Analysis"/>
-        <figcaption> Feature Analysis</figcaption>
-    </div>
-    <div className=" container ">
-        <p>Then came the <b>Feature Prioritization Matrix </b> to narrow down our ideas. From this, we
-            decided the primary feature of our
-            app would be facilitating opportunities for users to do kind acts for others in their community.
-            Other features would
-            be points, badges, and closing daily rings in order to encourage retention.</p>
-    </div>
-    <div className="d-flex flex-column justify-contents-center imgWidth">
-        <img src="/kindful/featureAnalysis.svg" className="img-fluid" alt=" Feature Prioritization matrix"/>
-        <figcaption> Feature Prioritization matrix</figcaption>
-    </div>
-
-    <div className="container">
-        <h2> Margaret's Story</h2>
-        <p> We developed a storyboard to further clarify our solution and how users would interact with
-            our app.</p>
-    </div>
-    {/* <!--storyboard--> */}
-    <div className="d-flex flex-column justify-contents-center imgWidth">
-        <img src="/kindful/storyboard.svg" className="img-fluid" alt=" Story Board"/>
-    </div>
-    {/* <!--end storyboard--> */}
-
-    <div className="container">
-        <h2> Task Flows!</h2>
-        <p>The Storyboard allowed us to create four main task flows for Margaret. </p>
-        <p> 1. Sign up for Kindful and view the tutorial onboarding screens</p>
-    </div>
-    <div className="d-flex  justify-contents-center ">
-        <img src="/kindful/taskFlow1.svg" className="img-fluid imgWidth " alt="task 1"/>
-    </div>
-    <div className="container">
-        <p> 2. Complete an act of kindness for a neighbor</p>
-    </div>
-    <div className="d-flex  justify-contents-center ">
-        <img src="/kindful/taskFlow2.svg" className="img-fluid imgWidth " alt="task 2"/>
-    </div>
-    <div className="container">
-        <p> 3. Request an act of Kindness</p>
-    </div>
-    <div className="d-flex justify-contents-center ">
-        <img src="/kindful/taskFlow3.svg" className="img-fluid imgWidth " alt="task 3"/>
-    </div>
-    <div className="container">
-        <p> 4. View weekly Kindful status on an smartwatch</p>
-    </div>
-    <div className="d-flex justify-contents-center ">
-        <img src="/kindful/taskflow4.svg" className="img-fluid imgWidth " alt="task 4"/>
-    </div>
-
- 
-    <div className="container">
-
-        <h2> Prototyping & Testing: Round 1</h2>
-        <p>At this point we had a good idea of what our app was about. So now for the fun part --
-            <b>Prototyping!</b>
-        </p>
-        <p> Here are some of our paper sketches</p>
-    </div>
-    <div className="d-flex justify-contents-center ">
-        <img src="/kindful/IlikeiWish.svg" className="img-fluid imgWidth " alt="task 4"/>
-    </div>
-    <div className="d-flex justify-contents-center ">
-        <img src="/kindful/IlikeiWish.svg" className="img-fluid imgWidth " alt="task 4"/>
-    </div>
-    <div className="d-flex justify-contents-center ">
-        <img src="/kindful/IlikeiWish.svg" className="img-fluid imgWidth " alt="task 4"/>
-    </div>
-    <div className="d-flex justify-contents-center ">
-        <img src="/kindful/IlikeiWish.svg" className="img-fluid imgWidth " alt="task 4"/>
-    </div>
-
-    <div className="container">
-        <p>And now <b>lo-fi wireframes</b>.</p>
-    </div>
-    <div className="d-flex flex-column justify-contents-center">
-        <img src="/pages/KindfulCS/Images/lo-fi wireframe.svg" alt="Lo-fi prototypes" className="img-fluid imgWidth"/>
-    </div>
-
-    <div className="container">
-        <p> Time for the first round of usability testing on our 4 tasks. We had 4 different people test our
-            lo-fi prototype.
-            These were the goals:</p>
-        <ol>
-            <li>Sign up for the app </li>
-            <li>Complete an act of kindness</li>
-            <li>Request an act of kindness</li>
-            <li>Check weekly status on the apple watch app </li>
-        </ol>
-        <p>Though each user was able to sign up for the app, that task wasn’t without its hiccups. At this point
-            in the prototyping
-            process, we hadn’t added iOS UI so some users hesitated for a moment expecting keyboards to popup.
-            We discovered we should
-            rename our “task” page for user understanding so it was later renamed to “available acts of
-            kindness.” Additionally there were
-            opportunities to make our concept more clear by adding copy and images to our onboarding, home, and
+        <div className="container">
+          <p>
+            {" "}
+            Time for the first round of usability testing on our 4 tasks. We had
+            4 different people test our lo-fi prototype. These were the goals:
+          </p>
+          <ol className="list-group list-group-numbered list-group-flush ">
+            <li class="list-group-item">Sign up for the app </li>
+            <li class="list-group-item">Complete an act of kindness</li>
+            <li class="list-group-item">Request an act of kindness</li>
+            <li class="list-group-item">Check weekly status on the apple watch app </li>
+          </ol>
+          <p>
+            Though each user was able to sign up for the app, that task wasn’t
+            without its hiccups. At this point in the prototyping process, we
+            hadn’t added iOS UI so some users hesitated for a moment expecting
+            keyboards to popup. We discovered we should rename our “task” page
+            for user understanding so it was later renamed to “available acts of
+            kindness.” Additionally there were opportunities to make our concept
+            more clear by adding copy and images to our onboarding, home, and
             available acts of kindness screens.
-        </p>
-    </div>
-{/*
+          </p>
+        </div>
+    
     <div className="container">
 
         <div className="row">
-            <div className="col  taskBubble" style="background-color: #CA68EC;">
+            <div className="col" style={{backgroundColor: "#CA68EC"}}>
                 <h4> Task 1 Results</h4>
                 <p> 100% success rate</p>
             </div>
-            <div className="col  taskBubble" style="background-color: #219653;">
+            <div className="col" style={{backgroundColor: "#ed6335"}}>
                 <h4> Task 2 Results</h4>
                 <p> 62.5% success rate</p>
             </div>
         </div>
         <div className="row">
-            <div className="col  taskBubble" style="background-color: #F14E3A;">
+            <div className="col" style={{backgroundColor: "#F14E3A"}}>
                 <h4> Task 3 Results</h4>
                 <p> 75% success rate</p>
             </div>
-            <div className="col  taskBubble" style="background-color: #2F80ED;">
+            <div className="col" style={{backgroundColor: "#2F80ED"}}>
                 <h4> Task 4 Results</h4>
                 <p> 87.5% success rate</p>
             </div>
@@ -298,8 +436,8 @@ export default function Kindful() {
             to refer to during our design process. </p>
     </div>
     <div className="d-flex justify-contents-center ">
-        <img src="/pages/KindfulCS/Images/moodboard.svg" className="img-fluid imgWidth">
-        <figcaption> Moodboard</figcaption>
+        <img src="/kindful/moodboard.svg" className={styles.imgWidth}/>
+        <small> Moodboard</small>
     </div>
 
     <div className="container">
@@ -313,8 +451,8 @@ export default function Kindful() {
     </div>
 
     <div className="d-flex flex-column justify-contents-center imgWidth">
-        <img src="/pages/KindfulCS/Images/styleguide.svg" className="img-fluid">
-        <figcaption> Styleguide</figcaption>
+        <img src="/kindful/styleguide.svg" className={styles.imgWidth}/>
+        <small> Styleguide</small>
     </div>
 
     <div className="container">
@@ -323,8 +461,8 @@ export default function Kindful() {
     </div>
 
     <div className="d-flex flex-column justify-contents-center imgWidth ">
-        <img src="/pages/KindfulCS/Images/hi-fi screenshots.svg" className="img-fluid narrowImgWidth">
-        <figcaption> Hi-fi prototype</figcaption>
+        <img src="/kindful/hi-fi screenshots.svg" className="img-fluid narrowImgWidth"/>
+        <small> Hi-fi prototype</small>
     </div>
     <div className="container">
 
@@ -397,13 +535,14 @@ export default function Kindful() {
         </ul>
     </div>
 
-    <hr>
-    <!-- other work section-->
+   
+    {/* <!-- other work section--> */}
+    <div className= "border-bottom border-black border-2">
     <h2> Want More?</h2>
     <div className="card-deck">
         <div className="card cardColor">
             <div className="d-flex flex-column justify-contents-center tinyImgWidth ">
-                <img className="img-fluid" src="/pages/NjArtCS/Images/AP HOME.svg" alt="Project NJ Artpridenj">
+                <img className={styles.imgWidth} src="/pages/NjArtCS/Images/AP HOME.svg" alt="Project NJ Artpridenj"/>
             </div>
             <div className="card-body">
                 <h5 className="card-title">NJ Art Pride Redesign</h5>
@@ -413,15 +552,17 @@ export default function Kindful() {
         </div>
         <div className="card cardColor">
             <div className="d-flex flex-column justify-contents-center tinyImgWidth ">
-                <img className="card-img-top img-fluid" src="/pages/KindfulCS/Images/Group 36.png" alt="Project Portfolio">
+                <img className="card-img-top img-fluid" src="/kindful/Group 36.png" alt="Project Portfolio"/>
             </div>
             <div className="card-body">
                 <h5 className="card-title">My Portfolio</h5>
                 <p className="card-text">Find out how I built this website</p>
                 <a href="#" className="btn btn-primary">Go somewhere</a>
             </div>
-
-    </div> */}
-    </section>
-</main>
-  )}
+</div>
+</div>
+    </div> 
+      </section>
+    </main>
+  );
+}

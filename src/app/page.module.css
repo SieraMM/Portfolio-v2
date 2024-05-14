@@ -16,3 +16,7 @@
  border-width: 1px;
 }
 
+.imgWidth{
+  max-height: 70vh;
+}
+
