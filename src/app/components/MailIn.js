@@ -1,6 +1,6 @@
 import styles from "../page.module.css";
 
-export default function Footer (){
+export default function MailIn (){
     return(
 
         <div className="card border-0  bg-transparent mt-5">

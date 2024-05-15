@@ -441,7 +441,7 @@ export default function Kindful() {
             inspiration images together in a grid in Figma
             to refer to during our design process. </p>
     </div>
-    <div className="d-flex justify-contents-center ">
+    <div className="container d-flex justify-contents-center ">
         <img src="/kindful/moodboard.svg" className={styles.imgWidth}/>
         <small> Moodboard</small>
     </div>
@@ -466,7 +466,7 @@ export default function Kindful() {
         <p>We returned to our mid-fi prototype and applied the changes to create a hi-fi prototype. </p>
     </div>
 
-    <div className="d-flex flex-column justify-contents-center w-50 ">
+    <div className="container d-flex flex-column justify-contents-center w-50 ">
         <img src="/kindful/hi-fi screenshots.svg" className={styles.imgWidth}/>
         <small> Hi-fi prototype</small>
     </div>
@@ -490,8 +490,8 @@ export default function Kindful() {
             Indicator remained in view at the bottom of each screen. </p>
     </div>
 
-    <div className={`d-flex flex-column justify-contents-center ${styles.imgWidth} `}>
-        <video src="/pages/KindfulCS/videos/artpride-finalV.mov" controls></video>
+    <div className={`container d-flex flex-column justify-contents-center w-50 ${styles.imgWidth} `}>
+        <video src="/kindful/artpride-finalV.mov" controls></video>
     </div>
 
     <div className="container">
@@ -528,7 +528,7 @@ export default function Kindful() {
             our task flow, and reminded us this was a beginning iteration.
         </p>
         <p>For future iterations we would incorporate the following features: </p>
-        <ul className="list-group">
+        <ol className="list-group  list-group-numbered list-group-flush text-start">
             <li class="list-group-item" > Bring the messaging piece into the app, so that we could regulate the communication between users
             </li>
             <li class="list-group-item" > Expand the rewards and badging for acquired points </li>
@@ -538,37 +538,15 @@ export default function Kindful() {
                 opportunities</li>
             <li class="list-group-item" >Donation opportunities as rewards. For example 500 points could equal a $50 donation to a charity of
                 your choice in your name</li>
-        </ul>
+        </ol>
     </div>
 
    
-    {/* <!-- other work section--> */}
-    <div className= "border-bottom border-black border-2">
-    <h2> Want More?</h2>
-    <div className="card-deck">
-        <div className="card cardColor">
-            <div className="d-flex flex-column justify-contents-center tinyImgWidth ">
-                <img className={styles.imgWidth} src="/pages/NjArtCS/Images/AP HOME.svg" alt="Project NJ Artpridenj"/>
-            </div>
-            <div className="card-body">
-                <h5 className="card-title">NJ Art Pride Redesign</h5>
-                <p className="card-text">A redeisgn of a well-loved community organization</p>
-                <a href="/pages/NjArtCS/index.html" className="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-        <div className="card cardColor">
-            <div className="d-flex flex-column justify-contents-center tinyImgWidth ">
-                <img className="card-img-top img-fluid" src="/kindful/Group 36.png" alt="Project Portfolio"/>
-            </div>
-            <div className="card-body">
-                <h5 className="card-title">My Portfolio</h5>
-                <p className="card-text">Find out how I built this website</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
-            </div>
-</div>
-</div>
-    </div> 
+
       </section>
+      <div className="container text-center w-50  my-5 pt-5">
+      <small> Designed & Built by Siera Meaux</small>
+      </div>
     </main>
   );
 }

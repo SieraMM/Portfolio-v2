@@ -2,12 +2,12 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Navbar from './components/Navbar';
 import ProjectCard from './components/ProjectCard';
-import Footer from './components/Footer';
+import MailIn from './components/MailIn';
 export default function Home() {
   return (
     <main>
      < Navbar/>
-     {/* "position-absolute top-50 start-50 translate-middle" */}
+ 
      <div data-bs-spy="scroll" data-bs-target="#navbar-home" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example  p-3 rounded-2 mx-5 px-5 py-5 my-5" tabindex="0">
 
 <div className = " py-5 my-5 text-left">
@@ -111,11 +111,11 @@ export default function Home() {
      
     </div>
    
-    <div className="container text-center w-50  my-5 pt-5">
+    <div className="container text-center w-50  my-5 py-5">
       
-    <Footer/>
+    <MailIn/>
   
-    <small> Designed & Built by Siera Meaux</small>
+    <small className="pt-4 mt-4"> Designed & Built by Siera Meaux</small>
     </div>
     </div>
     </main>
