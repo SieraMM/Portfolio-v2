@@ -29,9 +29,9 @@ export default function Kindful() {
       </div>
       {/* end Jumbo--> */}
       {/* i wanna do a nested nav  */}
-      <div className="row">
+      {/* <div className="row">
   <div className="col-2">
-    <nav id="navbar-example3" className=" h-100 flex-column align-items-stretch pe-4  border-end d-none d-md-block ">
+    <nav id="navbar-example3" className={`position-fixed start-0 h-100 bottom-0 flex-column  align-items-stretch pe-4 d-none d-md-block ${styles.customNav}`}>
       <nav className="nav nav-pills flex-column">
         <a className="nav-link" href="#overview">Overview</a>
         <a className="nav-link" href="#brainstorm">Brainstorming</a>
@@ -51,8 +51,9 @@ export default function Kindful() {
 
   <div className="col-10">
   <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2  mx-5 px-5 py-3 text-center" tabindex="0">
-    
-        <div id="overview" className=" container border-bottom border-black border-2">
+     */}
+     <div className="mx-5 px-5 py-5 my-5 text-center">
+        <div  className=" container border-bottom border-black border-2">
           <h2>Kindful: Spreading Kindness and Community</h2>
 
           <div className="d-flex justify-content-center ">
@@ -400,30 +401,18 @@ export default function Kindful() {
         </div>
 
         <div className="container">
-          <p>
-            {" "}
-            Time for the first round of usability testing on our 4 tasks. We had
-            4 different people test our lo-fi prototype. These were the goals:
-          </p>
-          <ol className="list-group list-group-numbered list-group-flush ">
-            <li className="list-group-item">Sign up for the app </li>
-            <li className="list-group-item">Complete an act of kindness</li>
-            <li className="list-group-item">Request an act of kindness</li>
-            <li className="list-group-item">Check weekly status on the apple watch app </li>
-          </ol>
+          <h4>First Round of Testing</h4>
           <p>
             Though each user was able to sign up for the app, that task wasn’t
-            without its hiccups. At this point in the prototyping process, we
-            hadn’t added iOS UI so some users hesitated for a moment expecting
-            keyboards to popup. We discovered we should rename our “task” page
-            for user understanding so it was later renamed to “available acts of
+            without its hiccups. We decided to rename our “task” page
+            for readiability to “available acts of
             kindness.” Additionally there were opportunities to make our concept
             more clear by adding copy and images to our onboarding, home, and
             available acts of kindness screens.
           </p>
         </div>
     
-    <div className="container w-50">
+    {/* <div className="container w-50">
 
         <div className="row g-1 ">
             <div className="col m-2 p-2 rounded-3" style={{backgroundColor: "#CA68EC"}}>
@@ -447,13 +436,13 @@ export default function Kindful() {
                 <p> 87.5% success </p>
             </div>
 
-        </div>
+        </div> 
 
 
 
 
 
-    </div>
+    </div> */}
 
 
     <div id="moodboard" className="container">
@@ -464,9 +453,9 @@ export default function Kindful() {
             inspiration images together in a grid in Figma
             to refer to during our design process. </p>
     </div>
-    <div className="container d-flex justify-contents-center ">
-        <img src="/kindful/moodboard.svg" className={styles.imgWidth}/>
-        <small> Moodboard</small>
+    <div className="container d-flex d-column justify-contents-center ">
+        <img src="/kindful/moodboard.svg" className={styles.imgWidth} alt="moodboard"/>
+     
     </div>
 
     <div className="container">
@@ -480,8 +469,8 @@ export default function Kindful() {
     </div>
 
     <div className="d-flex flex-column justify-contents-center">
-        <img src="/kindful/styleguide.svg" className={styles.imgWidth}/>
-        <small> Styleguide</small>
+        <img src="/kindful/styleguide.svg" className={styles.imgWidth} alt="styleguide"/>
+
     </div>
 
     <div id="testing2" className="container">
@@ -490,8 +479,8 @@ export default function Kindful() {
     </div>
 
     <div className="container d-flex flex-column justify-contents-center w-50 ">
-        <img src="/kindful/hi-fi screenshots.svg" className={styles.imgWidth}/>
-        <small> Hi-fi prototype</small>
+        <img src="/kindful/hi-fi screenshots.svg" className={styles.imgWidth}  alt= "Hi-fi prototype"/>
+     
     </div>
     <div className="container">
 
@@ -550,7 +539,7 @@ export default function Kindful() {
             member assisted us in clarifying
             our task flow, and reminded us this was a beginning iteration.
         </p>
-        <p>For future iterations we would incorporate the following features: </p>
+        <h4>For future iterations we would incorporate the following features: </h4>
         <ol className="list-group  list-group-numbered list-group-flush text-start">
             <li className="list-group-item" > Bring the messaging piece into the app, so that we could regulate the communication between users
             </li>
@@ -563,13 +552,14 @@ export default function Kindful() {
                 your choice in your name</li>
         </ol>
     </div>
-
+    </div>
+{/* 
 
    </div>
 
     
       </div>
-      </div>
+      </div> */}
       <div className="container text-center w-50  my-5 pt-5">
       <small> Designed & Built by Siera Meaux</small>
       </div>

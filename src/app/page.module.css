@@ -17,6 +17,12 @@
 }
 
 .imgWidth{
-  max-height: 70vh;
+  max-height: 50vh;
 }
 
+.customNav {
+  top: calc(100vh - 70%); /* Adjust this value based on the height of the jumbotron */
+  height: auto;
+  bottom: 0;
+  overflow-y: auto;
+}
