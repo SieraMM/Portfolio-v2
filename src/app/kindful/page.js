@@ -28,8 +28,31 @@ export default function Kindful() {
         </div>
       </div>
       {/* end Jumbo--> */}
-      <section className="body mx-5 px-5 py-3 text-center">
-        <div className=" container border-bottom border-black border-2">
+      {/* i wanna do a nested nav  */}
+      <div className="row">
+  <div className="col-2">
+    <nav id="navbar-example3" className=" h-100 flex-column align-items-stretch pe-4  border-end d-none d-md-block ">
+      <nav className="nav nav-pills flex-column">
+        <a className="nav-link" href="#overview">Overview</a>
+        <a className="nav-link" href="#brainstorm">Brainstorming</a>
+        <a className="nav-link" href="#mara">Meet Mara</a>
+        <a className="nav-link" href="#analysis">Competitor Analysis</a>
+        <a className="nav-link" href="#storyboard">Storyboard</a>
+        <a className="nav-link" href="#task-flow">Task Flows</a>
+        <a className="nav-link" href="#testing1">Prototyping & Testing: Round 1</a>
+        <a className="nav-link" href="#moodboard">Moodboard & Style Guide</a>
+        <a className="nav-link" href="#testing2">Prototyping & Testing: Round 2</a>
+        <a className="nav-link" href="#landing">Landing Page</a>
+        <a className="nav-link" href="#lessons">Lessons</a>
+      </nav>
+    </nav>
+  </div>
+
+
+  <div className="col-10">
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2  mx-5 px-5 py-3 text-center" tabindex="0">
+    
+        <div id="overview" className=" container border-bottom border-black border-2">
           <h2>Kindful: Spreading Kindness and Community</h2>
 
           <div className="d-flex justify-content-center ">
@@ -57,7 +80,7 @@ export default function Kindful() {
           </div>
         </div>
 
-        <div className=" container mt-5 text-center">
+        <div id="brainstorm" className=" container mt-5 text-center">
           <h2>Brainstorming </h2>
 
           <p>
@@ -86,7 +109,7 @@ export default function Kindful() {
             crafted our survery and interview questions.
           </p>
 
-          <h2> Meet Mara</h2>
+          <h2 id="mara"> Meet Mara</h2>
 
           <p>
             {" "}
@@ -207,7 +230,7 @@ export default function Kindful() {
             className={styles.imgWidth}
           />
         </div>
-        <div className=" container ">
+        <div id="analysis" className=" container ">
           <h2> Competitor Analysis</h2>
           <p>
             Before brainstorming the features for our app we conducted a
@@ -269,7 +292,7 @@ export default function Kindful() {
           <small> Feature Prioritization matrix</small>
         </div>
 
-        <div className="container">
+        <div id="storyboard" className="container">
           <h2> Margaret's Story</h2>
           <p>
             {" "}
@@ -287,7 +310,7 @@ export default function Kindful() {
         </div>
         {/* <!--end storyboard--> */}
 
-        <div className="container justify-content-center">
+        <div id="task-flow" className="container justify-content-center">
           <h2> Task Flows!</h2>
           <p>
             The Storyboard allowed us to create 4 main task flows for Margaret.{" "}
@@ -358,7 +381,7 @@ export default function Kindful() {
         </div>
         </div>
 
-        <div className="container">
+        <div id="testing1" className="container">
           <h2> Prototyping & Testing: Round 1</h2>
           <p>
             At this point we had a good idea of what our app was about. So now
@@ -383,10 +406,10 @@ export default function Kindful() {
             4 different people test our lo-fi prototype. These were the goals:
           </p>
           <ol className="list-group list-group-numbered list-group-flush ">
-            <li class="list-group-item">Sign up for the app </li>
-            <li class="list-group-item">Complete an act of kindness</li>
-            <li class="list-group-item">Request an act of kindness</li>
-            <li class="list-group-item">Check weekly status on the apple watch app </li>
+            <li className="list-group-item">Sign up for the app </li>
+            <li className="list-group-item">Complete an act of kindness</li>
+            <li className="list-group-item">Request an act of kindness</li>
+            <li className="list-group-item">Check weekly status on the apple watch app </li>
           </ol>
           <p>
             Though each user was able to sign up for the app, that task wasn’t
@@ -433,7 +456,7 @@ export default function Kindful() {
     </div>
 
 
-    <div className="container">
+    <div id="moodboard" className="container">
         <h2> Moodboard & Style Guide</h2>
         <p> We used Pinterest to collaborate on a mood board as a team. We wanted our app to feel bright and
             joyful. We selected imagery with colorful
@@ -461,7 +484,7 @@ export default function Kindful() {
         <small> Styleguide</small>
     </div>
 
-    <div className="container">
+    <div id="testing2" className="container">
         <h2> Prototyping and Testing: Round 2 </h2>
         <p>We returned to our mid-fi prototype and applied the changes to create a hi-fi prototype. </p>
     </div>
@@ -494,8 +517,8 @@ export default function Kindful() {
         <video src="/kindful/artpride-finalV.mov" controls></video>
     </div>
 
-    <div className="container">
-        <h2> Marketing Landing Page</h2>
+    <div id="landing" className="container">
+        <h2>Landing Page</h2>
         <p>My teammate used our style guide to design our <a href="https://sieramm.github.io/kindful/" target="_blank"
                 className="bodyLink">landing page </a>. Then I translated her design to code
             using Visual Studio Code and GitHub.
@@ -509,8 +532,8 @@ export default function Kindful() {
      
     </div>
 
-    <div className="container">
-        <h2> What I Learned</h2>
+    <div id="lessons" className="container">
+        <h2> Lessons</h2>
         <p> Throughout this process, I learned how to incorporate new interactions and animations in Figma with the
             purpose
             of adding more fun and interest to our prototype. I also deepened our knowledge of Bootstrap to code our
@@ -529,21 +552,24 @@ export default function Kindful() {
         </p>
         <p>For future iterations we would incorporate the following features: </p>
         <ol className="list-group  list-group-numbered list-group-flush text-start">
-            <li class="list-group-item" > Bring the messaging piece into the app, so that we could regulate the communication between users
+            <li className="list-group-item" > Bring the messaging piece into the app, so that we could regulate the communication between users
             </li>
-            <li class="list-group-item" > Expand the rewards and badging for acquired points </li>
-            <li class="list-group-item" > Partner with local organizations and stores to offer discounts or coupons as rewards for points
+            <li className="list-group-item" > Expand the rewards and badging for acquired points </li>
+            <li className="list-group-item" > Partner with local organizations and stores to offer discounts or coupons as rewards for points
             </li>
-            <li class="list-group-item" >A community section that could have blogs about ideas on how to do good locally, volunteering
+            <li className="list-group-item" >A community section that could have blogs about ideas on how to do good locally, volunteering
                 opportunities</li>
-            <li class="list-group-item" >Donation opportunities as rewards. For example 500 points could equal a $50 donation to a charity of
+            <li className="list-group-item" >Donation opportunities as rewards. For example 500 points could equal a $50 donation to a charity of
                 your choice in your name</li>
         </ol>
     </div>
 
-   
 
-      </section>
+   </div>
+
+    
+      </div>
+      </div>
       <div className="container text-center w-50  my-5 pt-5">
       <small> Designed & Built by Siera Meaux</small>
       </div>
