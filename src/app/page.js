@@ -19,9 +19,9 @@ export default function Home() {
         <div className=" py-5 my-5 text-left">
           <div className="row">
             <div className="col-8 w-50">
-              <h5> Hi, my name is</h5>
+              <h5 className="pb-4"> Hi, my name is</h5>
               <h1> Siera Meaux. </h1>
-              <h1> I'm a Full-Stack Developer</h1>
+              <h1 className="pb-4"> I'm a Full-Stack Developer</h1>
               <p className=" pt-4 fs-4">
                 who doubles as a UX designer. I enjoy building accessible
                 projects that make life simple. My passion for learning and
@@ -33,17 +33,22 @@ export default function Home() {
             {/* add a link ot my vote wise github contributions */}
 
             <div
-              className="col text-center align-content-center"
+              className="col text-center align-content-center  "
               style={{ color: "#FF807C" }}
             >
-              {" "}
-              this is an image placeholder
+              <Image
+               src="/me Background Removed.png"
+               width={320}
+               height={310}
+               alt="Picture of the author"
+               className= {`border rounded-circle border-3 ${styles.borderC}`}
+               />
             </div>
           </div>
         </div>
 
         <section
-          id="scrollspyAbout"
+          id="about"
           className=" text-center justify-content-center mx-5 px-5"
         >
           <div className="space" style={{ height: "10vh" }}>
@@ -101,7 +106,7 @@ export default function Home() {
           </div>
         </section>
 
-        <div id="scrollspyWork" className="space" style={{ height: "10vh" }}>
+        <div id="work" className="space" style={{ height: "10vh" }}>
           {" "}
         </div>
         <h5 className="pb-4 text-center">
@@ -110,9 +115,9 @@ export default function Home() {
         </h5>
         <div className="parentProject d-flex flex-column justify-content-center align-items-center my-4 ">
           <ProjectCard
-            image="/portfolio/originalPortfolioCode.svg"
-            title="Portfolio Website"
-            subtitle="The process of designing and creating this website following the UX Design lifecycle through multiple iterations. This website aims to represent my work as a designer and engineer so far!"
+            image="/portfolio/16.svg"
+            title="Portfolio "
+            subtitle="The process of designing and creating this website following the UX Design lifecycle through multiple iterations!"
           />
 
           <ProjectCard

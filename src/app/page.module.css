@@ -7,9 +7,15 @@
 .pCard{
   
   background-color: #C4D6FB ;
-  box-shadow:  4px 4px 6px #888888;
+  box-shadow:  4px 4px  #888888;
+  /* border: #2E323A; */
+  border-width: 2px;
+  /* max-height: 25vh; */
 }
 
+.cardImgHeight{
+  max-height: 20vh
+}
 .cButton {
   color:#E13443;
  border-color:#E13443;
@@ -25,4 +31,8 @@
   height: auto;
   bottom: 0;
   overflow-y: auto;
+}
+
+.borderC{
+  border-color:#2E323A !important;
 }

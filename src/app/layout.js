@@ -13,6 +13,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head> 
+        <link
+  rel="apple-touch-icon"
+  href="/apple-icon.png"
+  type="image/<generated>"
+  sizes="<generated>"
+/></head>
       <body className={inter.className}>{children}</body>
     </html>
   );
